@@ -16,14 +16,14 @@
     }
     
 
-    .wrap , .wrap-3{
+    .wrap , .wrap-3, .wrap-4{
       max-width: 1140px;
       min-height: 200px;
       margin: 0 auto;
       padding:20px 20px;
       background-color: #ccc;
     }
-    .box-1 , .box-2 , .box-3{
+    .box-1 , .box-2 , .box-3 , .box-4{
       color:#ccc;
       background-color: red;
       width:600px;
@@ -45,6 +45,11 @@
       left: 50%;
       transform: translate(-50%,-50%);
     }
+    .wrap-4{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   </style>
 </head>
 <body>
@@ -63,6 +68,11 @@
   <h2>Horizontal and vertical alignment: <code>position:absolute</code></h2>
   <div class="wrap-3">
     <div class="box-3">Horizontal and vertical alignment</div>
+  </div>
+
+  <h2>Horizontal and vertical alignment: <code>display:flex</code></h2>
+  <div class="wrap-4">
+    <div class="box-4">Horizontal and vertical alignment</div>
   </div>
 </body>
 </html>
