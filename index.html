@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Centered element</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }  
+    body{
+      background-color: #000;
+      color: aqua;
+    }
+    h1{
+      text-align: center;
+    }
+    
+
+    .wrap , .wrap-3{
+      max-width: 1140px;
+      min-height: 200px;
+      margin: 0 auto;
+      padding:20px 20px;
+      background-color: #ccc;
+    }
+    .box-1 , .box-2 , .box-3{
+      color:#ccc;
+      background-color: red;
+      width:600px;
+      min-height: 100px;
+    }
+    .box-1{
+      margin:0 auto;
+    }
+    .box-2{
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+    .wrap-3{
+      position: relative;
+    }
+    .box-3{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  </style>
+</head>
+<body>
+  <h1>How centered elements?</h1>
+
+  <h2>Horizontal alignment: <code>margin:auto</code></h2>
+  <div class="wrap">
+    <div class="box-1">Horizontal alignment</div>
+  </div>
+
+  <h2>Horizontal alignment:<code>margin-left:50%</code> </h2>
+  <div class="wrap">
+    <div class="box-2">Horizontal alignment</div>
+  </div>
+
+  <h2>Horizontal and vertical alignment: <code>position:absolute</code></h2>
+  <div class="wrap-3">
+    <div class="box-3">Horizontal and vertical alignment</div>
+  </div>
+</body>
+</html>
